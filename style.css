@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: lightblue;
+    border-bottom: 1px solid skyblue;
+}
+
+header h1 {
+    color: steelblue;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: steelblue;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: lightcyan;
+    padding: 20px;
+    border-right: 1px solid skyblue;
+}
+
+aside h2 {
+    color: steelblue;
+}
+
+aside p {
+    color: steelblue;
+    line-height: 1.5;
+}
+
+main {
+    grid-area: main;
+    padding: 25px;
+}
+
+.portfolio {
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+    margin-bottom: 25px;
+}
+
+.portfolio h2 {
+    color: steelblue;
+}
+
+.project-list {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.project h3 {
+    color: steelblue;
+
+    margin-bottom: 5px;
+}
+
+.project p {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.project button {
+    margin-top: auto;
+    padding: 9px;
+    background-color: steelblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.project:hover {
+    box-shadow: 0 4px 12px lightgray;
+    transform: scale(1.02);
+}
+
+.project button:hover {
+    background-color: skyblue;
+}
+
+.gallery-section {
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+}
+
+.gallery-section h2 {
+    color: steelblue;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 180px);
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightblue;
+    border-top: 1px solid skyblue;
+    text-align: center;
+    padding: 20px;
+    color: steelblue;
+}
+
+footer h2 {
+    margin: 5px;
+}
