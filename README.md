@@ -51,10 +51,10 @@ The .gallery is a grid container with 3 equal columns and 4 rows, plus gap: 15px
 
 ## Part 3. Combining Flexbox & Grid
 This page combines both techniques:
--**Grid** for the overall page layout (header, sidebar, main, footer).
--**Flexbox** in the header for navigation.
--**Flexbox** inside each project card (title, text, button).
--**Footer** spans the bottom via grid-area: footer.
+- **Grid** for the overall page layout (header, sidebar, main, footer).
+- **Flexbox** in the header for navigation.
+- **Flexbox** inside each project card (title, text, button).
+- **Footer** spans the bottom via grid-area: footer.
 <img width="1422" height="836" alt="Снимок экрана 2026-09-27 173851" src="https://github.com/user-attachments/assets/bdacf4e7-b7b8-4d3c-be18-28b229d8c853" />
 <img width="1412" height="836" alt="Снимок экрана 2026-09-27 173855" src="https://github.com/user-attachments/assets/4bc0059a-ca6e-4443-b486-c7341c59d846" />
 <img width="1405" height="733" alt="Снимок экрана 2026-09-27 173859" src="https://github.com/user-attachments/assets/3f2d3b18-31d2-42de-af46-3e2d79509783" />
@@ -62,9 +62,9 @@ This page combines both techniques:
 ---
 
 ## Summary of Work Process
--Planned the page structure: header, sidebar, main (portfolio + gallery), footer.
--Built index.html with semantic tags, 3 project cards, and 12 gallery items.
--**Part 1**: Used Flexbox for the header and card row. Ensured equal card heights and added hover effects.
--**Part 2**: Used Grid for the page layout with named areas, and for the gallery with 3×4 columns/rows. Added caption overlays on hover.
--**Part 3**: Combined Grid (page layout) with Flexbox (header and card content). Verified footer spans the bottom.
--Tested in browser, fixed spacing issues, and uploaded everything to GitHub.
+- Planned the page structure: header, sidebar, main (portfolio + gallery), footer.
+- Built index.html with semantic tags, 3 project cards, and 12 gallery items.
+- **Part 1**: Used Flexbox for the header and card row. Ensured equal card heights and added hover effects.
+- **Part 2**: Used Grid for the page layout with named areas, and for the gallery with 3×4 columns/rows. Added caption overlays on hover.
+- **Part 3**: Combined Grid (page layout) with Flexbox (header and card content). Verified footer spans the bottom.
+- Tested in browser, fixed spacing issues, and uploaded everything to GitHub.
